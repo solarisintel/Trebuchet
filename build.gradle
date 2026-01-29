@@ -4,8 +4,8 @@ buildscript {
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.3.0'
-        classpath 'com.google.protobuf:protobuf-gradle-plugin:0.8.6'
+        classpath 'com.android.tools.build:gradle:3.6.1'
+        classpath 'com.google.protobuf:protobuf-gradle-plugin:0.9.5'
     }
 }
 
@@ -18,7 +18,7 @@ android {
     compileSdkVersion 28
 
     defaultConfig {
-        minSdkVersion 21
+        minSdkVersion 26
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -42,20 +42,20 @@ android {
     productFlavors {
         aosp {
             dimension "default"
-            applicationId 'com.android.launcher3'
-            testApplicationId 'com.android.launcher3.tests'
+            applicationId 'com.android.launcher3b'
+            testApplicationId 'com.android.launcher3b.tests'
         }
 
         l3go {
             dimension "default"
-            applicationId 'com.android.launcher3'
-            testApplicationId 'com.android.launcher3.tests'
+            applicationId 'com.android.launcher3b'
+            testApplicationId 'com.android.launcher3b.tests'
         }
 
         quickstep {
             dimension "default"
-            applicationId 'com.android.launcher3'
-            testApplicationId 'com.android.launcher3.tests'
+            applicationId 'com.android.launcher3b'
+            testApplicationId 'com.android.launcher3b.tests'
         }
     }
 
@@ -122,17 +122,17 @@ dependencies {
     implementation "com.android.support:support-v4:${SUPPORT_LIBS_VERSION}"
     implementation "com.android.support:support-dynamic-animation:${SUPPORT_LIBS_VERSION}"
     implementation "com.android.support:recyclerview-v7:${SUPPORT_LIBS_VERSION}"
-    implementation 'com.google.protobuf.nano:protobuf-javanano:3.0.0-alpha-7'
+    implementation 'com.google.protobuf.nano:protobuf-javanano:3.2.0rc2'
 
     quickstepImplementation fileTree(dir: "quickstep/libs", include: 'sysui_shared.jar')
 
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation "org.mockito:mockito-core:1.9.5"
+    androidTestImplementation "org.mockito:mockito-core:2.15.0"
     androidTestImplementation 'com.google.dexmaker:dexmaker:1.2'
     androidTestImplementation 'com.google.dexmaker:dexmaker-mockito:1.2'
-    androidTestImplementation 'com.android.support.test:runner:1.0.0'
-    androidTestImplementation 'com.android.support.test:rules:1.0.0'
-    androidTestImplementation 'com.android.support.test.uiautomator:uiautomator-v18:2.1.2'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test:rules:1.0.2'
+    androidTestImplementation 'com.android.support.test.uiautomator:uiautomator-v18:2.1.3'
     androidTestImplementation "com.android.support:support-annotations:${SUPPORT_LIBS_VERSION}"
 }
 
@@ -146,9 +146,9 @@ protobuf {
                 task.builtins {
                     remove java
                     javanano {
-                        option "java_package=launcher_log_extension.proto|com.android.launcher3.userevent.nano"
-                        option "java_package=launcher_log.proto|com.android.launcher3.userevent.nano"
-                        option "java_package=launcher_dump.proto|com.android.launcher3.model.nano"
+                        option "java_package=launcher_log_extension.proto|com.android.launcher3b.userevent.nano"
+                        option "java_package=launcher_log.proto|com.android.launcher3b.userevent.nano"
+                        option "java_package=launcher_dump.proto|com.android.launcher3b.model.nano"
                         option "enum_style=java"
                     }
                 }
