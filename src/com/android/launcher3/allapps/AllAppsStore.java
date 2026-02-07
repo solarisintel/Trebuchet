@@ -81,7 +81,10 @@ public class AllAppsStore {
      */
     public void addOrUpdateApps(List<AppInfo> apps) {
         for (AppInfo app : apps) {
-            mComponentToAppMap.put(app.toComponentKey(), app);
+            // タイトルがないものはドロワーのリストに表示しない
+            if (app.title != null && app.title.length() > 0) {
+                mComponentToAppMap.put(app.toComponentKey(), app);
+            }
         }
         notifyUpdate();
     }
