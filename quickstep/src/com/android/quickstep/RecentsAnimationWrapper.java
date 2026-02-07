@@ -15,9 +15,9 @@
  */
 package com.android.quickstep;
 
-import com.android.launcher3.util.LooperExecutor;
-import com.android.launcher3.util.TraceHelper;
-import com.android.launcher3.util.UiThreadHelper;
+import com.android.launcher3b.util.LooperExecutor;
+import com.android.launcher3b.util.TraceHelper;
+import com.android.launcher3b.util.UiThreadHelper;
 import com.android.quickstep.util.RemoteAnimationTargetSet;
 import com.android.systemui.shared.system.RecentsAnimationControllerCompat;
 

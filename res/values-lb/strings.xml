@@ -17,7 +17,7 @@
 */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name">Launcher3</string>
+    <string name="app_name">launcher3b</string>
     <string name="activity_not_found">D\'App ass net installéiert.</string>
     <string name="activity_not_available">App ass net disponibel</string>
     <string name="safemode_shortcut_error">Erofgelueden App am séchere Modus desaktivéiert</string>

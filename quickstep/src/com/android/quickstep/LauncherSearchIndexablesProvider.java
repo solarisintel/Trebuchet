@@ -28,8 +28,8 @@ import android.provider.SearchIndexablesContract.XmlResource;
 import android.provider.SearchIndexablesProvider;
 import android.util.Xml;
 
-import com.android.launcher3.R;
-import com.android.launcher3.graphics.IconShapeOverride;
+import com.android.launcher3b.R;
+import com.android.launcher3b.graphics.IconShapeOverride;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;

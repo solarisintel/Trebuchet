@@ -17,7 +17,7 @@
 */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name">Launcher3</string>
+    <string name="app_name">launcher3b</string>
     <string name="work_folder_name">Gwaith</string>
     <string name="activity_not_found">Dyw\'r ap heb ei osod.</string>
     <string name="activity_not_available">Ap ddim ar gael</string>
@@ -55,7 +55,7 @@
     <string name="permdesc_read_settings">Mae\'n caniatáu yr ap i ddarllen gosodiadau a llwybrau byr yn Cartref.</string>
     <string name="permlab_write_settings">ysgrifennu llwybrau byr a gosodiadau Cartref</string>
     <string name="permdesc_write_settings">Mae\'n caniatáu yr ap i newid y gosodiadau a llwybrau byr yn Cartref.</string>
-    <string name="msg_no_phone_permission">Dyw <xliff:g id="app_name" example="Launcher3">%1$s</xliff:g> ddim yn cael gwneud galwadau.</string>
+    <string name="msg_no_phone_permission">Dyw <xliff:g id="app_name" example="launcher3b">%1$s</xliff:g> ddim yn cael gwneud galwadau.</string>
     <string name="gadget_error_text">Problem wrth lwytho\'r teclyn</string>
     <string name="gadget_setup_text">Gosod</string>
     <string name="uninstall_system_app_text">Mae hwn yn ap system a ni ellir ei ddadosod.</string>

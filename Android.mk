@@ -41,7 +41,7 @@ LOCAL_SDK_VERSION := 27
 include $(BUILD_PREBUILT)
 
 #
-# Build rule for Launcher3 dependencies lib.
+# Build rule for launcher3b dependencies lib.
 #
 include $(CLEAR_VARS)
 LOCAL_USE_AAPT2 := true
@@ -67,21 +67,21 @@ LOCAL_PROTO_JAVA_OUTPUT_PARAMS := enum_style=java
 
 LOCAL_SDK_VERSION := current
 LOCAL_MIN_SDK_VERSION := 21
-LOCAL_MODULE := Launcher3CommonDepsLib
+LOCAL_MODULE := launcher3bCommonDepsLib
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MANIFEST_FILE := AndroidManifest-common.xml
 
 include $(BUILD_STATIC_JAVA_LIBRARY)
 
 #
-# Build rule for Launcher3 app.
+# Build rule for launcher3b app.
 #
 include $(CLEAR_VARS)
 LOCAL_USE_AAPT2 := true
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_STATIC_JAVA_LIBRARIES := libGoogleFeed
-LOCAL_STATIC_ANDROID_LIBRARIES := Launcher3CommonDepsLib
+LOCAL_STATIC_ANDROID_LIBRARIES := launcher3bCommonDepsLib
 
 LOCAL_SRC_FILES := \
     $(call all-java-files-under, src) \
@@ -94,23 +94,23 @@ LOCAL_SDK_VERSION := current
 LOCAL_MIN_SDK_VERSION := 23
 LOCAL_PACKAGE_NAME := Trebuchet
 LOCAL_PRIVILEGED_MODULE := true
-LOCAL_OVERRIDES_PACKAGES := Home Launcher2 Launcher3
+LOCAL_OVERRIDES_PACKAGES := Home Launcher2 launcher3b
 
 LOCAL_FULL_LIBS_MANIFEST_FILES := $(LOCAL_PATH)/AndroidManifest-common.xml
 
-LOCAL_JACK_COVERAGE_INCLUDE_FILTER := com.android.launcher3.*
+LOCAL_JACK_COVERAGE_INCLUDE_FILTER := com.android.launcher3b.*
 
 include $(BUILD_PACKAGE)
 
 #
-# Build rule for Launcher3 Go app for Android Go devices.
+# Build rule for launcher3b Go app for Android Go devices.
 #
 include $(CLEAR_VARS)
 LOCAL_USE_AAPT2 := true
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_STATIC_JAVA_LIBRARIES := libGoogleFeed
-LOCAL_STATIC_ANDROID_LIBRARIES := Launcher3CommonDepsLib
+LOCAL_STATIC_ANDROID_LIBRARIES := launcher3bCommonDepsLib
 
 LOCAL_SRC_FILES := \
     $(call all-java-files-under, src) \
@@ -125,14 +125,14 @@ LOCAL_SDK_VERSION := current
 LOCAL_MIN_SDK_VERSION := 21
 LOCAL_PACKAGE_NAME := TrebuchetGo
 LOCAL_PRIVILEGED_MODULE := true
-LOCAL_OVERRIDES_PACKAGES := Home Launcher2 Launcher3 Launcher3Go Launcher3QuickStep
+LOCAL_OVERRIDES_PACKAGES := Home Launcher2 launcher3b launcher3bGo launcher3bQuickStep
 
 LOCAL_FULL_LIBS_MANIFEST_FILES := \
     $(LOCAL_PATH)/AndroidManifest.xml \
     $(LOCAL_PATH)/AndroidManifest-common.xml
 
 LOCAL_MANIFEST_FILE := go/AndroidManifest.xml
-LOCAL_JACK_COVERAGE_INCLUDE_FILTER := com.android.launcher3.*
+LOCAL_JACK_COVERAGE_INCLUDE_FILTER := com.android.launcher3b.*
 include $(BUILD_PACKAGE)
 
 #
@@ -146,7 +146,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_STATIC_JAVA_LIBRARIES := \
     libSharedSystemUI \
     libGoogleFeed
-LOCAL_STATIC_ANDROID_LIBRARIES := Launcher3CommonDepsLib
+LOCAL_STATIC_ANDROID_LIBRARIES := launcher3bCommonDepsLib
 
 LOCAL_SRC_FILES := \
     $(call all-java-files-under, src) \
@@ -158,7 +158,7 @@ LOCAL_PROGUARD_ENABLED := disabled
 
 LOCAL_SDK_VERSION := system_current
 LOCAL_MIN_SDK_VERSION := 26
-LOCAL_MODULE := Launcher3QuickStepLib
+LOCAL_MODULE := launcher3bQuickStepLib
 LOCAL_PRIVILEGED_MODULE := true
 
 LOCAL_MANIFEST_FILE := quickstep/AndroidManifest.xml
@@ -171,14 +171,14 @@ include $(CLEAR_VARS)
 LOCAL_USE_AAPT2 := true
 LOCAL_MODULE_TAGS := optional
 
-LOCAL_STATIC_ANDROID_LIBRARIES := Launcher3QuickStepLib
+LOCAL_STATIC_ANDROID_LIBRARIES := launcher3bQuickStepLib
 LOCAL_PROGUARD_ENABLED := disabled
 
 LOCAL_SDK_VERSION := system_current
 LOCAL_MIN_SDK_VERSION := 26
 LOCAL_PACKAGE_NAME := TrebuchetQuickStep
 LOCAL_PRIVILEGED_MODULE := true
-LOCAL_OVERRIDES_PACKAGES := Home Launcher2 Launcher3 Trebuchet
+LOCAL_OVERRIDES_PACKAGES := Home Launcher2 launcher3b Trebuchet
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/quickstep/res
 
@@ -187,13 +187,13 @@ LOCAL_FULL_LIBS_MANIFEST_FILES := \
     $(LOCAL_PATH)/AndroidManifest-common.xml
 
 LOCAL_MANIFEST_FILE := quickstep/AndroidManifest.xml
-LOCAL_JACK_COVERAGE_INCLUDE_FILTER := com.android.launcher3.*
+LOCAL_JACK_COVERAGE_INCLUDE_FILTER := com.android.launcher3b.*
 
 include $(BUILD_PACKAGE)
 
 
 #
-# Build rule for Launcher3 Go app with quickstep for Android Go devices.
+# Build rule for launcher3b Go app with quickstep for Android Go devices.
 #
 include $(CLEAR_VARS)
 LOCAL_USE_AAPT2 := true
@@ -202,7 +202,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_STATIC_JAVA_LIBRARIES := \
     libSharedSystemUI \
     libGoogleFeed
-LOCAL_STATIC_ANDROID_LIBRARIES := Launcher3CommonDepsLib
+LOCAL_STATIC_ANDROID_LIBRARIES := launcher3bCommonDepsLib
 
 LOCAL_SRC_FILES := \
     $(call all-java-files-under, src) \
@@ -219,7 +219,7 @@ LOCAL_SDK_VERSION := system_current
 LOCAL_MIN_SDK_VERSION := 26
 LOCAL_PACKAGE_NAME := TrebuchetQuickStepGo
 LOCAL_PRIVILEGED_MODULE := true
-LOCAL_OVERRIDES_PACKAGES := Home Launcher2 Launcher3 Launcher3QuickStep Launcher3QuickStepGo
+LOCAL_OVERRIDES_PACKAGES := Home Launcher2 launcher3b launcher3bQuickStep launcher3bQuickStepGo
 
 LOCAL_FULL_LIBS_MANIFEST_FILES := \
     $(LOCAL_PATH)/go/AndroidManifest.xml \
@@ -227,7 +227,7 @@ LOCAL_FULL_LIBS_MANIFEST_FILES := \
     $(LOCAL_PATH)/AndroidManifest-common.xml
 
 LOCAL_MANIFEST_FILE := quickstep/AndroidManifest.xml
-LOCAL_JACK_COVERAGE_INCLUDE_FILTER := com.android.launcher3.*
+LOCAL_JACK_COVERAGE_INCLUDE_FILTER := com.android.launcher3b.*
 include $(BUILD_PACKAGE)
 
 

@@ -1,34 +1,34 @@
--keep,allowshrinking,allowoptimization class com.android.launcher3.** {
+-keep,allowshrinking,allowoptimization class com.android.launcher3b.** {
   *;
 }
 
--keep class com.android.launcher3.allapps.AllAppsBackgroundDrawable {
+-keep class com.android.launcher3b.allapps.AllAppsBackgroundDrawable {
   public void setAlpha(int);
   public int getAlpha();
 }
 
--keep class com.android.launcher3.BaseRecyclerViewFastScrollBar {
+-keep class com.android.launcher3b.BaseRecyclerViewFastScrollBar {
   public void setThumbWidth(int);
   public int getThumbWidth();
   public void setTrackWidth(int);
   public int getTrackWidth();
 }
 
--keep class com.android.launcher3.BaseRecyclerViewFastScrollPopup {
+-keep class com.android.launcher3b.BaseRecyclerViewFastScrollPopup {
   public void setAlpha(float);
   public float getAlpha();
 }
 
--keep class com.android.launcher3.ButtonDropTarget {
+-keep class com.android.launcher3b.ButtonDropTarget {
   public int getTextColor();
 }
 
--keep class com.android.launcher3.CellLayout {
+-keep class com.android.launcher3b.CellLayout {
   public float getBackgroundAlpha();
   public void setBackgroundAlpha(float);
 }
 
--keep class com.android.launcher3.CellLayout$LayoutParams {
+-keep class com.android.launcher3b.CellLayout$LayoutParams {
   public void setWidth(int);
   public int getWidth();
   public void setHeight(int);
@@ -39,7 +39,7 @@
   public int getY();
 }
 
--keep class com.android.launcher3.views.BaseDragLayer$LayoutParams {
+-keep class com.android.launcher3b.views.BaseDragLayer$LayoutParams {
   public void setWidth(int);
   public int getWidth();
   public void setHeight(int);
@@ -50,43 +50,43 @@
   public int getY();
 }
 
--keep class com.android.launcher3.FastBitmapDrawable {
+-keep class com.android.launcher3b.FastBitmapDrawable {
   public void setDesaturation(float);
   public float getDesaturation();
   public void setBrightness(float);
   public float getBrightness();
 }
 
--keep class com.android.launcher3.MemoryDumpActivity {
+-keep class com.android.launcher3b.MemoryDumpActivity {
   *;
 }
 
--keep class com.android.launcher3.PreloadIconDrawable {
+-keep class com.android.launcher3b.PreloadIconDrawable {
   public float getAnimationProgress();
   public void setAnimationProgress(float);
 }
 
--keep class com.android.launcher3.pageindicators.CaretDrawable {
+-keep class com.android.launcher3b.pageindicators.CaretDrawable {
   public float getCaretProgress();
   public void setCaretProgress(float);
 }
 
--keep class com.android.launcher3.Workspace {
+-keep class com.android.launcher3b.Workspace {
   public float getBackgroundAlpha();
   public void setBackgroundAlpha(float);
 }
 
--keep class com.android.launcher3.graphics.FixedScaleDrawable {
+-keep class com.android.launcher3b.graphics.FixedScaleDrawable {
   public <init>(...);
 }
 
 # Proguard will strip new callbacks in LauncherApps.Callback from
 # WrappedCallback if compiled against an older SDK. Don't let this happen.
--keep class com.android.launcher3.compat.** {
+-keep class com.android.launcher3b.compat.** {
   *;
 }
 
--keep class com.android.launcher3.graphics.ShadowDrawable {
+-keep class com.android.launcher3b.graphics.ShadowDrawable {
   public <init>(...);
 }
 
@@ -102,7 +102,7 @@
 -keep class android.support.v7.widget.RecyclerView { *; }
 
 # LauncherAppTransitionManager
--keep class com.android.launcher3.LauncherAppTransitionManagerImpl {
+-keep class com.android.launcher3b.LauncherAppTransitionManagerImpl {
     public <init>(...);
 }
 
@@ -121,16 +121,16 @@
     public <init>(...);
 }
 
--keep interface com.android.launcher3.userevent.nano.LauncherLogProto.** {
+-keep interface com.android.launcher3b.userevent.nano.LauncherLogProto.** {
   *;
 }
 
--keep interface com.android.launcher3.model.nano.LauncherDumpProto.** {
+-keep interface com.android.launcher3b.model.nano.LauncherDumpProto.** {
   *;
 }
 
 # Discovery bounce animation
--keep class com.android.launcher3.allapps.DiscoveryBounce$VerticalProgressWrapper {
+-keep class com.android.launcher3b.allapps.DiscoveryBounce$VerticalProgressWrapper {
   public void setProgress(float);
   public float getProgress();
 }
@@ -141,10 +141,10 @@
 -dontwarn android.os.**
 
 # QSB
--keep class com.android.launcher3.qsb.QsbContainerView$QsbFragment {
+-keep class com.android.launcher3b.qsb.QsbContainerView$QsbFragment {
   public <init>(...);
 }
 
--keep class com.android.launcher3.lineage.trust.** {
+-keep class com.android.launcher3b.lineage.trust.** {
  *;
 }

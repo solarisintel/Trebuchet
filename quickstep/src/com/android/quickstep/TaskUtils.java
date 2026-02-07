@@ -16,8 +16,8 @@
 
 package com.android.quickstep;
 
-import static com.android.launcher3.anim.Interpolators.LINEAR;
-import static com.android.launcher3.anim.Interpolators.TOUCH_RESPONSE_INTERPOLATOR;
+import static com.android.launcher3b.anim.Interpolators.LINEAR;
+import static com.android.launcher3b.anim.Interpolators.TOUCH_RESPONSE_INTERPOLATOR;
 import static com.android.systemui.shared.recents.utilities.Utilities.getNextFrameNumber;
 import static com.android.systemui.shared.recents.utilities.Utilities.getSurface;
 import static com.android.systemui.shared.system.RemoteAnimationTargetCompat.MODE_OPENING;
@@ -33,12 +33,12 @@ import android.util.Log;
 import android.view.Surface;
 import android.view.View;
 
-import com.android.launcher3.BaseDraggingActivity;
-import com.android.launcher3.ItemInfo;
-import com.android.launcher3.Utilities;
-import com.android.launcher3.compat.LauncherAppsCompat;
-import com.android.launcher3.compat.UserManagerCompat;
-import com.android.launcher3.util.ComponentKey;
+import com.android.launcher3b.BaseDraggingActivity;
+import com.android.launcher3b.ItemInfo;
+import com.android.launcher3b.Utilities;
+import com.android.launcher3b.compat.LauncherAppsCompat;
+import com.android.launcher3b.compat.UserManagerCompat;
+import com.android.launcher3b.util.ComponentKey;
 import com.android.quickstep.util.ClipAnimationHelper;
 import com.android.quickstep.util.MultiValueUpdateListener;
 import com.android.quickstep.util.RemoteAnimationTargetSet;

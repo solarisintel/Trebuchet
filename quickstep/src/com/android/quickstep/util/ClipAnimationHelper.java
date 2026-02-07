@@ -15,7 +15,7 @@
  */
 package com.android.quickstep.util;
 
-import static com.android.launcher3.anim.Interpolators.LINEAR;
+import static com.android.launcher3b.anim.Interpolators.LINEAR;
 import static com.android.quickstep.QuickScrubController.QUICK_SCRUB_TRANSLATION_Y_FACTOR;
 import static com.android.systemui.shared.system.RemoteAnimationTargetCompat.MODE_CLOSING;
 import static com.android.systemui.shared.system.RemoteAnimationTargetCompat.MODE_OPENING;
@@ -33,12 +33,12 @@ import android.support.annotation.Nullable;
 import android.view.Surface;
 import android.view.animation.Interpolator;
 
-import com.android.launcher3.BaseDraggingActivity;
-import com.android.launcher3.DeviceProfile;
-import com.android.launcher3.R;
-import com.android.launcher3.Utilities;
-import com.android.launcher3.anim.Interpolators;
-import com.android.launcher3.views.BaseDragLayer;
+import com.android.launcher3b.BaseDraggingActivity;
+import com.android.launcher3b.DeviceProfile;
+import com.android.launcher3b.R;
+import com.android.launcher3b.Utilities;
+import com.android.launcher3b.anim.Interpolators;
+import com.android.launcher3b.views.BaseDragLayer;
 import com.android.quickstep.RecentsModel;
 import com.android.quickstep.views.RecentsView;
 import com.android.quickstep.views.TaskThumbnailView;

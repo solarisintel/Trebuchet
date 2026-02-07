@@ -41,10 +41,10 @@ import android.view.MotionEvent;
 import android.view.VelocityTracker;
 import android.view.ViewConfiguration;
 
-import com.android.launcher3.BaseDraggingActivity;
-import com.android.launcher3.MainThreadExecutor;
-import com.android.launcher3.util.TraceHelper;
-import com.android.launcher3.views.BaseDragLayer;
+import com.android.launcher3b.BaseDraggingActivity;
+import com.android.launcher3b.MainThreadExecutor;
+import com.android.launcher3b.util.TraceHelper;
+import com.android.launcher3b.views.BaseDragLayer;
 import com.android.quickstep.views.RecentsView;
 import com.android.systemui.shared.recents.IOverviewProxy;
 import com.android.systemui.shared.recents.ISystemUiProxy;

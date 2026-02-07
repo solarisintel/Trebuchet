@@ -21,11 +21,11 @@ import android.graphics.Point;
 import android.graphics.Rect;
 import android.util.AttributeSet;
 
-import com.android.launcher3.BaseActivity;
-import com.android.launcher3.R;
-import com.android.launcher3.util.Themes;
-import com.android.launcher3.util.TouchController;
-import com.android.launcher3.views.BaseDragLayer;
+import com.android.launcher3b.BaseActivity;
+import com.android.launcher3b.R;
+import com.android.launcher3b.util.Themes;
+import com.android.launcher3b.util.TouchController;
+import com.android.launcher3b.views.BaseDragLayer;
 import com.android.quickstep.RecentsActivity;
 
 public class RecentsRootView extends BaseDragLayer<RecentsActivity> {

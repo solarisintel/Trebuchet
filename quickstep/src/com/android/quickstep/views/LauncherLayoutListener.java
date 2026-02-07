@@ -15,15 +15,15 @@
  */
 package com.android.quickstep.views;
 
-import static com.android.launcher3.states.RotationHelper.REQUEST_LOCK;
-import static com.android.launcher3.states.RotationHelper.REQUEST_NONE;
+import static com.android.launcher3b.states.RotationHelper.REQUEST_LOCK;
+import static com.android.launcher3b.states.RotationHelper.REQUEST_NONE;
 
 import android.graphics.Rect;
 import android.view.MotionEvent;
 
-import com.android.launcher3.AbstractFloatingView;
-import com.android.launcher3.Insettable;
-import com.android.launcher3.Launcher;
+import com.android.launcher3b.AbstractFloatingView;
+import com.android.launcher3b.Insettable;
+import com.android.launcher3b.Launcher;
 import com.android.quickstep.ActivityControlHelper.LayoutListener;
 import com.android.quickstep.WindowTransformSwipeHandler;
 

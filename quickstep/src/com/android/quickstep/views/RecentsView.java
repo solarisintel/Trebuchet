@@ -16,12 +16,12 @@
 
 package com.android.quickstep.views;
 
-import static com.android.launcher3.BaseActivity.STATE_HANDLER_INVISIBILITY_FLAGS;
-import static com.android.launcher3.anim.Interpolators.ACCEL;
-import static com.android.launcher3.anim.Interpolators.ACCEL_2;
-import static com.android.launcher3.anim.Interpolators.FAST_OUT_SLOW_IN;
-import static com.android.launcher3.anim.Interpolators.LINEAR;
-import static com.android.launcher3.util.SystemUiController.UI_STATE_OVERVIEW;
+import static com.android.launcher3b.BaseActivity.STATE_HANDLER_INVISIBILITY_FLAGS;
+import static com.android.launcher3b.anim.Interpolators.ACCEL;
+import static com.android.launcher3b.anim.Interpolators.ACCEL_2;
+import static com.android.launcher3b.anim.Interpolators.FAST_OUT_SLOW_IN;
+import static com.android.launcher3b.anim.Interpolators.LINEAR;
+import static com.android.launcher3b.util.SystemUiController.UI_STATE_OVERVIEW;
 import static com.android.quickstep.TaskUtils.checkCurrentOrManagedUserId;
 import static com.android.quickstep.WindowTransformSwipeHandler.MIN_PROGRESS_FOR_OVERVIEW;
 
@@ -61,19 +61,19 @@ import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityNodeInfo;
 import android.widget.ListView;
 
-import com.android.launcher3.BaseActivity;
-import com.android.launcher3.DeviceProfile;
-import com.android.launcher3.Insettable;
-import com.android.launcher3.PagedView;
-import com.android.launcher3.R;
-import com.android.launcher3.Utilities;
-import com.android.launcher3.anim.AnimatorPlaybackController;
-import com.android.launcher3.anim.PropertyListBuilder;
-import com.android.launcher3.config.FeatureFlags;
-import com.android.launcher3.userevent.nano.LauncherLogProto.Action.Direction;
-import com.android.launcher3.userevent.nano.LauncherLogProto.Action.Touch;
-import com.android.launcher3.util.PendingAnimation;
-import com.android.launcher3.util.Themes;
+import com.android.launcher3b.BaseActivity;
+import com.android.launcher3b.DeviceProfile;
+import com.android.launcher3b.Insettable;
+import com.android.launcher3b.PagedView;
+import com.android.launcher3b.R;
+import com.android.launcher3b.Utilities;
+import com.android.launcher3b.anim.AnimatorPlaybackController;
+import com.android.launcher3b.anim.PropertyListBuilder;
+import com.android.launcher3b.config.FeatureFlags;
+import com.android.launcher3b.userevent.nano.LauncherLogProto.Action.Direction;
+import com.android.launcher3b.userevent.nano.LauncherLogProto.Action.Touch;
+import com.android.launcher3b.util.PendingAnimation;
+import com.android.launcher3b.util.Themes;
 import com.android.quickstep.OverviewCallbacks;
 import com.android.quickstep.QuickScrubController;
 import com.android.quickstep.RecentsModel;

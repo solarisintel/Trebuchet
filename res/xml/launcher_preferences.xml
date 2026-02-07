@@ -93,7 +93,7 @@
             android:defaultValue="@string/icon_shape_default"
             android:persistent="false" />
 
-        <com.android.launcher3.views.ButtonPreference
+        <com.android.launcher3b.views.ButtonPreference
             android:key="pref_icon_badging"
             android:title="@string/icon_badging_title"
             android:persistent="false"
@@ -104,6 +104,6 @@
                     android:name=":settings:fragment_args_key"
                     android:value="notification_badging" />
             </intent>
-        </com.android.launcher3.views.ButtonPreference>
+        </com.android.launcher3b.views.ButtonPreference>
     </PreferenceCategory>
 </PreferenceScreen>
