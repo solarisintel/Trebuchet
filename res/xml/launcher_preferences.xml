@@ -91,7 +91,8 @@
             android:entries="@array/icon_shape_entries"
             android:entryValues="@array/icon_shape_paths"
             android:defaultValue="@string/icon_shape_default"
-            android:persistent="false" />
+            android:persistent="false"
+            android:enabled="false"/>
 
         <com.android.launcher3b.views.ButtonPreference
             android:key="pref_icon_badging"
