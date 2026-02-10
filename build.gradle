@@ -30,6 +30,10 @@ android {
         debug {
             minifyEnabled false
         }
+        release {
+            minifyEnabled false
+        }
+
     }
 
     compileOptions {
@@ -59,12 +63,13 @@ android {
         }
     }
 
+    // Enabled release builds
     // Disable release builds for now
-    android.variantFilter { variant ->
-        if (variant.buildType.name.endsWith('release')) {
-            variant.setIgnore(true);
-        }
-    }
+    //android.variantFilter { variant ->
+    //    if (variant.buildType.name.endsWith('release')) {
+    //        variant.setIgnore(true);
+    //    }
+    //}
 
     sourceSets {
         main {
@@ -78,6 +83,10 @@ android {
         }
 
         debug {
+            manifest.srcFile "AndroidManifest.xml"
+        }
+
+        release {
             manifest.srcFile "AndroidManifest.xml"
         }
 
