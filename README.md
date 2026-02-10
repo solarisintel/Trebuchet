@@ -12,7 +12,7 @@ Build by Androd Studio Dolphin (2021.3.1 Canary 9)
   
   
 ### Screenshots
-![sreenshot1](screenshots/1.png)
-![sreenshot2](screenshots/2.png)
-![sreenshot3](screenshots/3.png)
+<img src="screenshots/1.png" width="300">
+<img src="screenshots/2.png" width="300">
+<img src="screenshots/3.png" width="300">
 
